@@ -14,7 +14,7 @@ let datas = [24, 57, 70, 100, 130, 120, 110, 170, 160, 110];
 let pngArrayBuffer = chart.draw(datas);
 
 //save to file
-require('fs').writeFileSync('output.png', Buffer.from(png));
+require('fs').writeFileSync('output.png', Buffer.from(pngArrayBuffer));
 //or covert to dataurl
 let dataURL = 'data:image/png;base64,' + Buffer.from(pngArrayBuffer).toString('base64');
 
