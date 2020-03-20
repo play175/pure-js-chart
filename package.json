@@ -1,0 +1,21 @@
+{
+    "name": "pure-js-chart",
+    "description": "pure js line-chart render to png ,no canvas or any browser apis, all in javascript",
+    "homepage": "https://github.com/play175/pure-js-chart",
+    "keywords": [
+        "pure-javascript",
+        "pure js",
+        "canvas",
+        "chart",
+        "line-chart",
+        "png",
+        "dataurl"
+    ],
+    "author": "play175",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/play175/pure-js-chart.git"
+    },
+    "main": "chart.js",
+    "version": "0.1.0"
+}
