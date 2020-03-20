@@ -20,7 +20,7 @@ http
     //draw chat and render to png
     let pngArrayBuffer = chart.draw(datas);
 
-    // require('fs').writeFileSync('output.png', Buffer.from(png));
+    // require('fs').writeFileSync('output.png', Buffer.from(pngArrayBuffer));
     let dataURL = 'data:image/png;base64,' + Buffer.from(pngArrayBuffer).toString('base64');
 
     res.writeHead(200, { 'Content-Type': 'text/html' });
