@@ -20,15 +20,15 @@ let dataURL = 'data:image/png;base64,' + Buffer.from(pngArrayBuffer).toString('b
 
 ```
 
-react native example:https://snack.expo.io/ry506_YI8
+react native example:https://snack.expo.io/Cs2ScHaBC
 
 ```js
 import React, { Component } from 'react';
 import { Text, View, Image } from 'react-native';
 import { create } from 'pure-js-chart';
-import {Buffer} from 'buffer';
+import { Buffer } from 'buffer';
 
-const chart = create(500, 200);
+const chart = create({ width: 500, height: 200 });
 
 export default class App extends Component {
   constructor(props) {
@@ -42,9 +42,8 @@ export default class App extends Component {
     this.state = {
       img: dataURL,
     };
-
   }
-  
+
   render() {
     return (
       <View>
